@@ -1,0 +1,610 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<style src="turkmenstyle.css"></style>
+<script   src="https://code.jquery.com/jquery-3.2.1.js"   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="   crossorigin="anonymous"></script>
+<script src="turkmen.js"> </script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<script src="https://use.fontawesome.com/b32a74ad84.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <style>
+
+ html{
+    width: 100%;
+    background-image: url("http://www.turkmenexporters.com/modules/image.php?src=./public/images/company_sliders/mSPp42.jpg&w=1342&h=345");
+  }
+
+  body{
+    width: 100%;
+    height: 2100px;
+  }
+
+    .ui-menu 
+  { 
+    width:240px;
+     }
+
+    .logo_link {
+      position: absolute;
+      top: 2%;
+      left: 10%;
+     }
+
+     form{
+      position: absolute;
+      right: 10%;
+     }
+
+     ::placeholder{
+      font-size: 11.4px;
+     }
+
+     .language {
+      position: absolute;
+      top: 2%;
+      right: 4%;
+     }
+
+     ul {
+      list-style-type: none;
+     }
+
+ ul li a {
+      color: #393E46;
+      font-size: 13.4px; 
+     }
+
+ #logo1{
+  position: absolute;
+  top: 1%;
+  left:3%;
+}
+
+#left-side li a:hover{
+  color:white;
+  text-decoration: underline; 
+  background: #284184;
+}
+
+ #left-side ul li {
+      border-radius: 1px;
+      position: relative;
+      border-bottom: 0.8px solid #eee; 
+      font-size: 13px; 
+      z-index: 200;
+     }
+
+  #left-side ul li div:hover{
+    background: #284184;
+    color: white;
+    font-weight: lighter;
+    font-size:12px; 
+  }
+
+ #left-side{
+      width: 275px;
+      height: 304px;
+      position: relative;
+      left: 4%; 
+    }
+ ul li ul li div {
+  font-size: 14px; 
+
+ }
+
+ ul li ul{
+      position: absolute;
+     }
+    
+p .category {
+      font-size: 10px; 
+     }
+
+  input {
+  font-size: 12px;
+}
+
+#searchBtn{
+  background:#6892D5;
+  color: white;
+  font-weight: bold; 
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius:10px; 
+
+}
+
+#rightSide{
+  position: absolute;
+  left: 30%; 
+  top: 20%;
+}
+
+
+#productWrapper ul li {
+   font-size: 12px;
+
+}
+
+#productWrapper{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position:relative;
+  top: 30%;
+  left:0%;
+  width: 100%;
+  border: 2px solid #eee; 
+} 
+
+.itemLeft a {
+  color: black; 
+}
+
+.itemLeft ul li {
+  color: grey;
+}
+
+.image {
+  padding: 20px; 
+  border-right: 1px solid #eee; 
+  border-bottom: 1px solid #eee; 
+  opacity: 0.75;
+}
+
+.image:hover{
+  opacity: 1.2;
+}
+.productTitle{
+  padding: 34px; 
+  border-right: 1px solid #eee; 
+  border-bottom: 1px solid #eee; 
+
+}
+
+.supplier{
+  padding-bottom: 53px; 
+  padding-top: 53px;  
+}
+.supplier a {
+  font-size: 14px; 
+}
+
+.supplier button {
+  color: white;
+  background: #D72323; 
+  opacity: 0.7; 
+}
+
+.supplier button:hover {
+  color: white;
+  background: #D72323; 
+  opacity: 1; 
+}
+
+.supplier a:hover{
+  color:#FF9A00; 
+  font-size: 15px; 
+}
+
+#pagination {
+  position: relative;
+  bottom: 0%; 
+  left: 30%;
+}
+
+#pagination ul{
+  display: inline-flex;
+}
+#pagination ul li{
+  padding: 10px; 
+  
+}
+#pagination a {
+  color: black;
+  float:left;
+  padding: 8px;
+  text-decoration: none;
+}
+
+#pagination a.active{
+  background: #5E88FC; 
+  color:white;
+  border: 1px solid #5E88FC; 
+}
+
+
+</style>
+</head>
+<body>
+
+   <header class="container">
+    <div class="logo">
+      <a href="www.turkmen-manufacturers.com">
+        
+        <span class="logo_link"><span style="color: black; font-weight: bold; font-size: 24px;color:#6892D5;text-transform: uppercase;text-shadow: 2px 2px black;">Turkmen-manufacturers.com</span></span> <br>
+        <span style="color:#2A363B;font-weight: lighter;font-size: 12px;text-shadow: none; position:absolute; left: 10%; top: 7%;"> Made in Turkmenistan </span>
+        <div clas="clear" style="clear:both"></div>
+        <img id="logo1" src="http://www.turkmenexporters.com/public/images/default/made-in-tkm-1.png" width=90 height=90 /> 
+        </a>
+    </div>
+    <div class="language">
+      <a href="">
+        <img src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_UK_england_united_kingdom-32.png"> 
+      </a>
+    </div>
+     <form action="index.php" method="post" id="searchForm" required>
+      <input type="text" id="searchBar" name="query" placeholder="" value="start search" maxlength="20" autocomplete="on" onmousedown="active();">
+      <input type="submit" id="searchBtn" value="Search" /> 
+        <i class="fa fa-search"></i> 
+    </form>
+  </header>
+   <div class="main">
+      <ul id="left-side"  style="position: absolute;left: 4%; top: 25%;">
+         <p class="category" style="font-size:18px; background-color:#284184; border-radius: 2px;color: white;text-align: center; ">
+            CATEGORY 
+            <div id="localdate"></div>
+         </p> 
+        <li><a href="">Texttile industry</a>
+          <ul>
+            <li><div>Bathrobe</div></li>
+            <li><div>Bleached Cotton</div></li>
+            <li><div>Cosmetics Cotton pad</div></li> 
+            <li><div>Cotton Flannel Farbic</div></li>
+            <li><div>Cotton Yarn</div></li>
+            <li><div>Denim Farbic</div></li>
+            <li><div>Bedroom Linens</div></li>
+            <li><div>Cosmetic Cotton Buds</div></li>
+            <li><div>Cotton Cretonne farbic</div></li>
+          </ul>
+        </li>
+        <li><a href=""> Food industry</a>
+          <ul>
+            <li><div>Baby Puree</div></li>
+            <li><div>Diray Product</div></li>
+            <li><div>Fruit juice</div></li>
+            <li><div>Ice tea</div></li>
+          </ul>
+        </li>
+        <li><a href="">Chemical & Petrochemical industry</a></li>
+        <li><a href="">Building materials industry</a>
+          <ul>
+            <li><div>Aerated concrete blocks</div></li>
+            <li><div>Steel channels</div></li>
+            <li><div>Steel corner</div></li>
+            <li><div>Steel reinforcement</div></li>
+
+          </ul>
+        </li>
+        <li><a href="">Pharmaceutical industry </a>
+          <ul>
+            <li><div>Antibacterial wet wipes</div></li>
+            <li><div>Dressing</div></li>
+            <li><div>Medical elastic corset</div></li>
+            <li><div>Medical various socks</div></li>
+            <li><div>Syrup of Licorice Root</div></li>
+            <li><div>Therapeutic mud</div></li>
+            <li><div>Medical sterile bandage</div></li>
+            <li><div>Medical herbal tea</div></li>
+            <li><div>Therapeutic mineral water</div></li>
+            <li><div>Therapeutic salt for spa</div></li>
+          </ul>
+        </li>
+        <li><a href="">Household goods</a>
+          <ul>
+            <li><div>Kitchen furniture</div></li>
+            <li><div>MDF doors</div></li>
+            <li><div>Office furniture</div></li>
+            <li><div>Living room and bedroom furniture</div></li>
+            <li><div>Metal beds</div></li>
+            <li><div>Wet wipes</div></li>   
+          </ul>
+        </li>
+        <li><a href="">Transportation &Logistics Services </a>
+          <ul>
+            <li><div>Aviation transportation</div></li>
+            <li><div>International transportation of dangerous goods</div></li>
+            <li><div>Maritime freight transportation</div></li>
+          </ul>
+        </li>
+        <li><a href="">Legal & Consulting service </a>
+          <ul>
+            <li><div>Arbitration services</div></li>
+            <li><div>Development, examination and drafting of civil law contract</div></li>
+            <li><div>Legal &consulting services</div></li>
+
+          </ul>
+        </li>
+        <li><a href="">Toursim & Trvael service </a>
+          <ul>
+            <li><div>Booking of hotel, airplane and train ticket</div></li>
+            <li><div>Business guide service in Turkmenistan</div></li>
+            <li><div>Sightseeing tour in Turkmenistan</div></li>
+          </ul>
+        </li>
+     </ul>
+     <div class="clear" style="clear: both"></div>
+    </div>
+  <div id="rightSide">
+      <div class="select">
+        <select class="product_category"> 
+          <option value="">Bedroom linens</option>
+          <option value="">Bathrobe</option>
+          <option value="">Towel</option>
+          <option value="">Catton Yarn</option>
+          <option value="">Jeans</option>
+          <option value="">Denim farbic</option>
+          <option value="">Terry slippers</option>
+          <option value="">Dyed cotton yarn</option>
+          <option value="">Raw cotton farbic</option>
+          <option value="">Cotton flannel farbic</option>
+          <option value="">Cotton ranforce farbic</option>
+          <option value="">Cosmetic cotton buds</option>
+          <option value="">Cosmetics cotton pads</option>
+          <option value="">Medical cotton wool</option>
+          <option value=""> Rolled cotton wool</option>
+          <option value="">Bleached cotton</option>
+          <option value="">Men's shirt</option>
+          <option value="">Kids pajama sets</option>
+          <option value="">Men's pajama sets</option>
+         <option value="">Women's pajama sets</option>
+         <option value="">Men's socks </option>
+         <option value="">Women's socks </option>
+         <option value="">Kids Socks </option>
+       </select>
+
+       <div id="productWrapper">
+          <div class="itemLeft"> 
+            <div class="image" >
+              <a href=""><img src="http://www.turkmenexporters.com/modules/image.php?src=./public/images/products/DeuGBO.jpg&w=160&h=160" width=120 height=120></a>
+            </div>
+            <div class="image">
+              <a href=""><img src="http://www.turkmenexporters.com/modules/image.php?src=./public/images/products/hzu89G.jpg&w=160&h=160" width=120 height=120></a>
+            </div>
+              <div class="image" >
+              <a href=""><img src="http://www.turkmenexporters.com/modules/image.php?src=./public/images/products/Zatvdi.jpg&w=160&h=160" width=120 height=120></a>
+            </div>  
+            <div class="image" >
+              <a href=""><img src="http://www.turkmenexporters.com/modules/image.php?src=./public/images/products/BMAUNO.jpg&w=160&h=160" width=120 height=120></a>
+            </div>
+            <div class="image" >
+
+              <a href=""><img src="http://www.turkmenexporters.com/modules/image.php?src=./public/images/products/9sr7RZ.jpg&w=160&h=160" width=120 height=120></a>
+            </div>
+            <div class="image" >
+              <a href=""><img src="http://www.turkmenexporters.com/modules/image.php?src=./public/images/products/S2Ul9U.jpg&w=160&h=160" width=120 height=120></a>
+            </div>
+            <div class="image" >
+              <a href=""><img src="http://www.turkmenexporters.com/modules/image.php?src=./public/images/products/K7o8mY.jpg&w=160&h=160" width=120 height=120></a>
+            </div>
+            <div class="image" >
+              <a href=""><img src="http://www.turkmenexporters.com/modules/image.php?src=./public/images/products/FtIpMk.jpg&w=160&h=160" width=120 height=120></a>
+            </div>
+            <div class="image" >
+              <a href=""><img src="http://www.turkmenexporters.com/modules/image.php?src=./public/images/products/kV9jFk.jpg&w=160&h=160" width=120 height=120></a>
+            </div>
+            <div class="image" >
+              <a href=""><img src="http://www.turkmenexporters.com/modules/image.php?src=./public/images/products/xy3bNo.jpg&w=160&h=160" width=120 height=120></a>
+            </div>
+             <div class="image" >
+              <a href=""><img src="http://www.turkmenexporters.com/modules/image.php?src=./public/images/products/E5fTzm.jpg&w=160&h=160" width=120 height=120></a>
+            </div>
+          </div>  
+        <div class="itemLeft">
+             <div class="productTitle">
+              <a href="">White towels ADT Textile</a>
+            <ul>
+              <li>EXW Price: 6,00<i class="fa fa-usd"></i> (1KG)</li>
+              <li>Minimum order quantity: 20 000 pieces</li>
+              <li>Currency of payment: USD</li>
+            </ul>
+          </div>
+            <div class="productTitle">
+              <a href="">Bathroom ADT Textile </a>
+            <ul>
+              <li>EXW price: 14,00 <i class="fa fa-usd"></i> </li>
+              <li>Minimum order quantity: 100 pieces</li>
+              <li>Currency of payment: USD</li>
+            </ul>
+          </div>
+          <div class="productTitle">
+              <a href="">Child bathrobe ADT Textile</a>
+            <ul>
+              <li>EXW price: 7,00<i class="fa fa-usd"></i></li>
+              <li>Minimum order quantity: 100 pieces</li>
+              <li>Currency of payment: USD</li>
+            </ul>
+          </div>
+          <div class="productTitle">
+              <a href="">Child bathrobe wholesale from Turkmenistan</a>
+            <ul>
+              <li>EXW price: 7,00<i class="fa fa-usd"></i></li>
+              <li>Minimum order quantity: 100 pieces</li>
+              <li>Currency of payment: USD</li>
+            </ul>
+          </div>
+          <div class="productTitle">
+              <a href="">Luxury bedroom linen ADT Textile</a>
+            <ul>
+              <li>EXW price:17,90 <i class="fa fa-usd"></i></li>
+              <li>Minimum order quantity: 600 sets</li>
+              <li>Currency of payment: USD</li>
+            </ul>
+          </div>
+          <div class="productTitle">
+              <a href="">High quality bedroom linen ADT Textile</a>
+            <ul>
+              <li>EXW price: 14,72<i class="fa fa-usd"></i></li>
+              <li>Minimum order quantity: 600 sets</li>
+              <li>Currency of payment: USD</li>
+            </ul>
+          </div>
+          <div class="productTitle">
+              <a href="">Bedroom linen ADT Textile</a>
+            <ul>
+              <li>EXW price:11,96 <i class="fa fa-usd"></i></li>
+              <li>Minimum order quantity:600 sets </li>
+              <li>Currency of payment: USD</li>
+            </ul>
+          </div>
+          <div class="productTitle">
+              <a href="">Whosale towels from Turkmenistan 100% cotton</a>
+            <ul>
+              <li>EXW price: 6,00<i class="fa fa-usd"></i></li>
+              <li>Minimum order quantity: 20 000 pieces</li>
+              <li>Currency of payment: USD</li>
+            </ul>
+          </div>
+          <div class="productTitle">
+              <a href="">Tower ADT Textile Made in Turkmenistan</a>
+            <ul>
+              <li>EXW price: 6,00<i class="fa fa-usd"></i></li>
+              <li>Minimum order quantity:20 000 pieces</li>
+              <li>Currency of payment: USD</li>
+            </ul>
+          </div>
+          <div class="productTitle">
+              <a href="">Turkmenistan terry towel</a>
+            <ul>
+              <li>EXW price: 6,00(1kg)<i class="fa fa-usd"></i></li>
+              <li>Minimum order quantity: 20 000 pieces</li>
+              <li>Currency of payment: USD</li>
+            </ul>
+          </div>
+          <div class="productTitle">
+              <a href="">High Quality Bathrobe 100% Cotton</a>
+            <ul>
+              <li>EXW price: 14,00<i class="fa fa-usd"></i></li>
+              <li>Minimum order quantity:20 000 pieces</li>
+              <li>Currency of payment: USD</li>
+            </ul>
+          </div>
+        </div>
+          <div class="itemLeft"> 
+             <div class="supplier" >
+              <a href="" > Ashgabat Textile<br /> Complex<br /> 
+                <button>
+                  <i class="fa fa-envelope-o">
+                  </i> 
+                  Contact
+                </button> 
+              </a> 
+            </div> 
+            <div class="supplier" >
+              <a href="" > Ashgabat Textile<br /> Complex<br />
+              <button> 
+                <i class="fa fa-envelope-o">
+                </i> 
+                  Contact 
+              </button>
+              </a> 
+
+            </div> 
+            <div class="supplier" >
+              <a href="" > Ashgabat Textile<br />Complex<br /> 
+                <button> 
+                    <i class="fa fa-envelope-o">
+                    </i> 
+                    Contact 
+                </button>
+              </a> 
+            </div> 
+          <div class="supplier" >
+              <a href="" > Ashgabat Textile<br />Complex<br /> 
+                <button> 
+                    <i class="fa fa-envelope-o">
+                    </i> 
+                    Contact 
+                </button>
+              </a> 
+            </div> 
+          
+          <div class="supplier" >
+              <a href="" > Ashgabat Textile<br />Complex<br /> 
+                <button> 
+                    <i class="fa fa-envelope-o">
+                    </i> 
+                    Contact 
+                </button>
+              </a> 
+        </div> 
+      
+          <div class="supplier" >
+              <a href="" > Ashgabat Textile<br />Complex<br /> 
+                <button> 
+                    <i class="fa fa-envelope-o">
+                    </i> 
+                    Contact 
+                </button>
+              </a> 
+          </div>
+          <div class="supplier" >
+              <a href="" > Ashgabat Textile<br />Complex<br /> 
+                <button> 
+                    <i class="fa fa-envelope-o">
+                    </i> 
+                    Contact 
+                </button>
+              </a> 
+          </div>
+          <div class="supplier" >
+              <a href="" > Ashgabat Textile<br />Complex<br /> 
+                <button> 
+                    <i class="fa fa-envelope-o">
+                    </i> 
+                    Contact 
+                </button>
+              </a> 
+          </div>
+          <div class="supplier" >
+              <a href="" > Ashgabat Textile<br />Complex<br /> 
+                <button> 
+                    <i class="fa fa-envelope-o">
+                    </i> 
+                    Contact 
+                </button>
+              </a> 
+          </div>
+          <div class="supplier" >
+              <a href="" > Ashgabat Textile<br />Complex<br /> 
+                <button> 
+                    <i class="fa fa-envelope-o">
+                    </i> 
+                    Contact 
+                </button>
+              </a> 
+          </div>
+    </div>
+  </div>
+    
+    <div id= "pagination">    
+      <ul>
+         <li><i class="fa fa-angle-left"></i></li>
+        <li><a href="" class="active">1</a></li>
+        <li><a href="">2</a></li>
+        <li> <a href="">3</a></li>
+        <li> <a href="">4</a></li>
+        <li><a href="">5</a></li>
+        <li><a href="">6</a></li>
+        <li><i class="fa fa-angle-right"></i></li>
+      </ul>    
+      
+    </div> 
+
+    <script>
+      $(function() {
+    $("#left-side").menu(); 
+    $(".center-slider .sliderWrapper").animate({"margin-left":'-=720px'}, 1000)
+    
+});
+    </script>

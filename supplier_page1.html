@@ -1,0 +1,375 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<style src="turkmenstyle.css"></style>
+<script   src="https://code.jquery.com/jquery-3.2.1.js"   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="   crossorigin="anonymous"></script>
+<script src="turkmen.js"> </script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<script src="https://use.fontawesome.com/b32a74ad84.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <style>
+
+  html{
+  	width: 100%;
+    background-image: url("http://www.turkmenexporters.com/modules/image.php?src=./public/images/company_sliders/mSPp42.jpg&w=1342&h=345");
+  }
+
+  body{
+  	width: 100%;
+  	height: 1000px;
+  }
+
+    .ui-menu 
+  { 
+    width:240px;
+     }
+
+    .logo_link {
+      position: absolute;
+      top: 2%;
+     }
+
+     form{
+      position: absolute;
+      right: 10%;
+     }
+
+     ::placeholder{
+      font-size: 11.4px;
+     }
+
+     .language {
+      position: absolute;
+      top: 2%;
+      right: 4%;
+     }
+
+  	 ul {
+      list-style-type: none;
+     }
+
+ ul li a {
+      color: #393E46;
+      font-size: 13.4px; 
+     }
+#left-side li a:hover{
+  color:white;
+  text-decoration: underline; 
+  background: #284184;
+}
+
+ #left-side ul li {
+      border-radius: 1px;
+      position: relative;
+      border-bottom: 0.8px solid #eee; 
+      font-size: 13px; 
+      z-index: 200;
+     }
+
+  #left-side ul li div:hover{
+    background: #284184;
+    color: white;
+    font-weight: lighter;
+    font-size:12px; 
+  }
+
+ #left-side{
+      width: 275px;
+      height: 304px;
+      position: relative;
+      left: 4%; 
+    }
+ ul li ul li div {
+  font-size: 14px; 
+
+ }
+
+ ul li ul{
+      position: absolute;
+     }
+    
+
+     p .category {
+      font-size: 10px; 
+     }
+
+  #slider{
+    width:120px;
+    height:120px; 
+    overflow: hidden;
+  }
+
+  #logo1{
+  position: absolute;
+  top: 1%;
+  left:3%;
+}
+
+  #slider .sliders{
+    display: block;
+    width: 400px;
+    height: 120px;
+    margin: 0;
+    padding: 0;
+  }
+
+  #slider .slide{
+    float: left;
+    list-style-type: none;
+    width: 120px;
+    height: 120px;
+  }
+
+  input {
+  font-size: 12px;
+}
+
+#searchBtn{
+  background:#6892D5;
+  color: white;
+  font-weight: bold; 
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius:10px; 
+
+}
+
+</style> 
+<script>
+  function active (){
+    var searchBar= document.getElementById("searchBar"); 
+    if (searchBar.value== "start search"){
+             searchBar.value=''
+             searchBar.placeholder="start search"
+       }
+  }
+</script>
+
+</head>
+<body>
+
+  <header class="container">
+  	<div class="logo">
+  		<a href="www.turkmen-manufacturers.com">
+        
+        <span class="logo_link"><span style="color: black; font-weight: bold; font-size: 24px;color:#6892D5;text-transform: uppercase;text-shadow: 2px 2px black;">Turkmen-manufacturers.com</span></span> <br>
+        <span style="color:#2A363B;font-weight: lighter;font-size: 12px;text-shadow: none; position:absolute; left: 10%; top: 7%;"> Made in Turkmenistan </span>
+        <div clas="clear" style="clear:both"></div>
+        <img id="logo1" src="http://www.turkmenexporters.com/public/images/default/made-in-tkm-1.png" width=90 height=90 /> 
+        </a>
+  	</div>
+  	<div class="language">
+  		<a href="">
+  			<img src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_UK_england_united_kingdom-32.png"> 
+  		</a>
+  	</div>
+  	 <form action="index.php" method="post" id="searchForm" required>
+      <input type="text" id="searchBar" name="query" placeholder="" value="start search" maxlength="20" autocomplete="on" onmousedown="active();">
+      <input type="submit" id="searchBtn" value="Search" /> 
+        <i class="fa fa-search"></i> 
+    </form>
+  </header>
+
+    <div class="main">
+      <ul id="left-side"  style="position: absolute;left: 4%; top: 25%;">
+         <p class="category" style="font-size:18px; background-color:#284184; border-radius: 2px;color: white;text-align: center; ">
+            CATEGORY 
+            <div id="localdate"></div>
+         </p> 
+        <li><a href="">Texttile industry</a>
+          <ul>
+            <li><div>Bathrobe</div></li>
+            <li><div>Bleached Cotton</div></li>
+            <li><div>Cosmetics Cotton pad</div></li> 
+            <li><div>Cotton Flannel Farbic</div></li>
+            <li><div>Cotton Yarn</div></li>
+            <li><div>Denim Farbic</div></li>
+            <li><div>Bedroom Linens</div></li>
+            <li><div>Cosmetic Cotton Buds</div></li>
+            <li><div>Cotton Cretonne farbic</div></li>
+          </ul>
+        </li>
+        <li><a href=""> Food industry</a>
+          <ul>
+            <li><div>Baby Puree</div></li>
+            <li><div>Diray Product</div></li>
+            <li><div>Fruit juice</div></li>
+            <li><div>Ice tea</div></li>
+          </ul>
+        </li>
+        <li><a href="">Chemical & Petrochemical industry</a></li>
+        <li><a href="">Building materials industry</a>
+          <ul>
+            <li><div>Aerated concrete blocks</div></li>
+            <li><div>Steel channels</div></li>
+            <li><div>Steel corner</div></li>
+            <li><div>Steel reinforcement</div></li>
+
+          </ul>
+        </li>
+        <li><a href="">Pharmaceutical industry </a>
+          <ul>
+            <li><div>Antibacterial wet wipes</div></li>
+            <li><div>Dressing</div></li>
+            <li><div>Medical elastic corset</div></li>
+            <li><div>Medical various socks</div></li>
+            <li><div>Syrup of Licorice Root</div></li>
+            <li><div>Therapeutic mud</div></li>
+            <li><div>Medical sterile bandage</div></li>
+            <li><div>Medical herbal tea</div></li>
+            <li><div>Therapeutic mineral water</div></li>
+            <li><div>Therapeutic salt for spa</div></li>
+          </ul>
+        </li>
+        <li><a href="">Household goods</a>
+          <ul>
+            <li><div>Kitchen furniture</div></li>
+            <li><div>MDF doors</div></li>
+            <li><div>Office furniture</div></li>
+            <li><div>Living room and bedroom furniture</div></li>
+            <li><div>Metal beds</div></li>
+            <li><div>Wet wipes</div></li>   
+          </ul>
+        </li>
+        <li><a href="">Transportation &Logistics Services </a>
+          <ul>
+            <li><div>Aviation transportation</div></li>
+            <li><div>International transportation of dangerous goods</div></li>
+            <li><div>Maritime freight transportation</div></li>
+          </ul>
+        </li>
+        <li><a href="">Legal & Consulting service </a>
+          <ul>
+            <li><div>Arbitration services</div></li>
+            <li><div>Development, examination and drafting of civil law contract</div></li>
+            <li><div>Legal &consulting services</div></li>
+
+          </ul>
+        </li>
+        <li><a href="">Toursim & Trvael service </a>
+          <ul>
+            <li><div>Booking of hotel, airplane and train ticket</div></li>
+            <li><div>Business guide service in Turkmenistan</div></li>
+            <li><div>Sightseeing tour in Turkmenistan</div></li>
+          </ul>
+        </li>
+     </ul>
+     <div class="clear" style="clear: both"></div>
+    </div>
+
+    <div class="supplierIntro"> 
+       <p class="title" style="position: absolute;left: 40%; top: 18%;"> <a href="http://archalyk.com"><strong>Archalyk Suw Co., Ltd</strong></a> </p>
+        <img src="http://www.turkmenexporters.com/modules/image.php?src=./public/images/company_logos/nUzvdi.png&w=150" width=100 height=100 style="position: absolute;left: 30%; top: 13%;">
+        <img src="http://www.turkmenexporters.com/modules/image.php?src=./public/images/company_sliders/mSPp42.jpg&w=1342&h=345" style="width: 60%; height: auto; position: absolute;left: 30%; top:30%; ">
+       <div class="clear" style="clear: both"></div>
+      <div id= "tab" style="position: absolute;left: 30%; top: 64%;">
+        <ul>
+         <li ><a href="#tabs-1">Home</a></li>
+         <li><a href="#tabs-2"> Company Profile </a></li>
+         <li><a href="#tabs-3"> Main Product </a></li>
+         <li><a href="#tabs-4">Contact </a></li>
+       </ul> 
+       <div id="tabs-1" style="font-size: 14px; ">
+        <div id="slider">
+          <ul class="sliders"> 
+             <li class="slide"><img src="archalyk.png" width= 120 height=120></li>
+             <li class="slide"><img src="http://www.turkmenexporters.com/modules/image.php?src=./public/images/company_photos/5T3Bwu.jpg&w=250&h=160" width=120 height=120></li>
+             <li class="slide"><img src="http://www.turkmenexporters.com/modules/image.php?src=./public/images/company_photos/j7Ps49.jpg&w=250&h=160" width=120 height=120></li>
+             <li class="slide"><img src="http://www.turkmenexporters.com/modules/image.php?src=./public/images/company_photos/5T3Bwu.jpg&w=250&h=160" width=120 height=120></li> 
+             <li class="slide"><img src="archalyk.png" width= 120 height=120></li>
+         </ul>
+     </div>
+         Company name: Archalyk Suw Co.Ltd<br> 
+         Date of establishment: 1997.10.1 <br> 
+         Business type : Beverage <br> 
+         Ownership: Private<br > 
+         Main product: Non-alcohol, beverage, drinking water<br>
+         Location: Ashgabat, Abadan district, Abadan highway J265-A 
+       </div>
+       <div id="tabs-2" style="font-size: 14px; width: 70%">Our organization was founded in 1997. During this period of time we had a leading role at the market of manufacturing and sale of nonalconolic drinks and bottled drinking water in Turkmenistan. We use water from the ecologically safe Powrize underground sweet-water, running through one of the scenery places of Turkmenistan, for production. The water of this spring is famous for its taste and purity. The quality of source water completely corresponds to the internationaly and Turkmen requirments to drinking water</div>
+
+       <div id="tabs-3" style="font-size: 14px";>
+        <ul id="productType"> 
+         <li>Non-alcohol</li>
+         <li>Drinking Water</li>
+         <li>Ice Tea</li> 
+        </ul>
+        <div id=productList>
+          <li><a href=""><img src="apple non-alcoholic beverage Archalyk 1.5 litre.png" width=100 height=100></a><a href="">Apple non-alcoholic beverage Archalyk 1.5 Litre</a><br>EXW price: Negotiable<br>Minimum order quantity: 6000 pieces</li>
+          <li>Archalyk pure drinking water - Made in Turkmenistan <br> EXW price: negotiable <br>Minimum order quantity: 6000 pieces</li>
+          <li><a href=""><img src="Berries flavoured ice tea Archalyk 0.45 Litre.png" width=100 height=100></a><a href="">Berries flavoured ice tea Archalyk 0.45 Litre<br>EXW price: Negotiable <br>Minimum order quantity: 1200 pieces</li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </div>
+       </div>
+       <div id="tabs-4" style="font-size: 14px;><i class="fa fa-phone"></i> +993 12 33 42 03 <br>
+        <i class="fa fa-phone"></i> +993 12 45 0013 <br>
+        <i class="fa fa-envelope"></i>info@archalyk.com<br>
+        homepage: http://archalyk.com</div>
+      </div> 
+  </div>  
+  <div id="sider">
+    <div>
+      <img src="">
+      <img src=""> 
+    </div>
+  </body> 
+
+    <script>
+       $(function() {
+        $("#left-side").menu();
+        
+      }); 
+
+       $(function (){
+        $("#tab").tabs(); 
+       }); 
+
+       $(function(){
+        var $slider=$('#slider');
+        var $slideContainer=$slider.find('.sliders');
+        var $slides=$slideContainer.find ('.slide');
+        var width=100; 
+        var animationSpeed=1000;
+        var pause=2000; 
+        var currentSlide=1; 
+        var interval; 
+
+      function startSlider(){
+        interval=setInterval (function (){
+          $slideContainer.animate({'margin-left':'-='+width}, animationSpeed, function(){
+            currentSlide++; 
+            if (currentSlide=== $slides.length){
+                currentSlide=1;
+              $slideContainer.css('margin-left',0);
+            }
+          });
+        }, pause)
+      }
+
+      function stopSlider(){
+        clearInterval(interval);
+      }
+
+      $slider.on ('mouseenter', stopSlider).on('mouseleave',startSlider);
+      startSlider();
+}); 
+
+    </script> 
+</html> 
+
+
+
+

@@ -1,0 +1,574 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<style src="turkmenstyle.css"></style>
+<script   src="https://code.jquery.com/jquery-3.2.1.js"   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="   crossorigin="anonymous"></script>
+<script src="turkmen.js"> </script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+<script src="https://use.fontawesome.com/b32a74ad84.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <style>
+
+  html{
+  	width: 100%;
+  }
+
+  body{
+  	width: 100%;
+  	height: 1400px;
+  }
+  p{
+  	color:#222831;
+  	font-size: 14px;
+  }
+
+  .ui-menu 
+  { 
+  	width:240px;
+  	 }
+
+ ul {
+  	 	list-style-type: none;
+  	 }
+
+ #left-side li a:hover{
+	color:white;
+	text-decoration: underline; 
+	background: #284184;
+}
+
+ #left-side ul li {
+  	 	border-radius: 1px;
+  	 	position: relative;
+  	 	border-bottom: 0.8px solid #eee; 
+  	 	font-size: 13px; 
+  	 	z-index: 200;
+  	 }
+
+  #left-side ul li div:hover{
+  	background: #284184;
+  	color: white;
+  	font-weight: lighter;
+  	font-size:12px; 
+  }
+
+
+ ul li a {
+  	 	color: #393E46;
+  	 	font-size: 13.4px; 
+  	 }
+
+ #left-side{
+    	width: 275px;
+    	height: 304px;
+    	position: relative;
+    	left: 4%; 
+    }
+ ul li ul li div {
+ 	font-size: 14px; 
+
+ }
+
+ ul li ul{
+  	 	position: absolute;
+  	 }
+
+ .logo_link {
+  	 	position: absolute;
+  	 	top: 2%;
+  	 }
+
+ form{
+  	 	position: absolute;
+  	 	right: 10%;
+  	 }
+
+ ::placeholder{
+  	 	font-size: 11.4px;
+  	 }
+
+ .language {
+  	 	position: absolute;
+  	 	top: 2%;
+  	 	right: 4%;
+  	 }
+  .mainsection {
+  	 	position: absolute;
+  	 	top: 20%;}
+
+ .nav_bar, .center-slider {
+    	flex: 1;
+    }
+
+ .category {
+    	position: relative;
+    	left: 3%;
+    	font-size: 20px;
+    	background-color: #253B6E;
+    	color: white;
+    	line-height: 1.5em;
+    	padding-left: 4px;
+    	font-weight:bolder;
+   } 
+
+
+ .center-slider  {
+    	width:600px;
+    	height:auto;
+    	z-index: -20; 
+    	position: relative;
+    	overflow: hidden;
+    }
+.center-slider .sliderWrapper {
+   	display: block; 
+   	margin:0;
+   	padding: 0;
+   	width: 600px;
+   	float: left;
+   	position: relative;
+   }
+
+.center-slider .slide{
+   	float: left;
+   	list-style-type: none;
+   	width:720px;
+   	height: auto;
+   }
+
+
+
+#product div ul {
+   	list-style-type: none;
+   	display: inline-flex; 
+   }
+
+#product img {
+   	padding: 12px; 
+   }
+
+img:hover {
+   	scale(1.1);
+   }
+
+#product p {
+   	padding-left: 10px;
+   }
+#strategy ul {
+   	display:flex; 
+   }
+.strategyIcon{
+	position: relative;
+	left: 15%;
+	bottom:10%;
+	padding-right: 30px; 
+}
+
+.strategyIcon i{
+   	width: 90px;
+   	height: 90px;
+    line-height: 90px;
+   	text-align: center;
+   	vertical-align: middle; 
+   	border-radius: 55%;
+   	color: #fff;
+   	display: flex;
+   	padding: 4px; 
+   	margin: 4px auto; 
+   } 
+
+.strategyIcon i:hover{
+   	scale(1.1); 
+   } 
+
+footer{
+	bottom: 0;
+	position: fixed; 
+	background-color:#6892D5; 
+	width: 100%; 
+	color: white;
+	text-align: center; 
+}
+
+input {
+	font-size: 12px;
+}
+
+#searchBtn{
+	background:#6892D5;
+	color: white;
+	font-weight: bold; 
+	border-top-left-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius:10px; 
+
+}
+
+#slider{
+	width: 1000px;
+	height: 310px;
+	overflow: hidden;
+	position: absolute;
+	top:2.4%;
+	left: 27%;
+}
+
+#slider .sliders{
+	width: 12000px;
+	height: 298px;
+	display: block;
+	margin: 0;
+	padding:0;
+
+}
+
+#slider .slide{
+	float: left;
+	list-style-type: none;
+	width:1000px;
+	height: 300px;
+} 
+
+#brands{
+	text-transform: uppercase;
+	text-align: center; 
+	color:#F08A5D;
+	letter-spacing: 2px;
+	font-weight: bolder;
+	padding: 4px; 
+}
+
+#logo1{
+	position: absolute;
+	top: 1%;
+	left:3%;
+}
+
+#bottombar{
+	width: 100%;
+	height: 60px;
+	background:#EAEAEA; 
+	position: absolute;
+	bottom: -20%;
+	left:4%;
+}
+
+#bottombar ul {
+	list-style-type: none;
+}
+
+#bottombar ul li{
+	display: inline-block;
+	padding: 20px;
+	position: relative;
+	left: 30%;
+} 
+</style>
+<script type="text/javascript">
+window.__lc = window.__lc || {};
+window.__lc.license = 9369760;
+(function() {
+  var lc = document.createElement('script'); lc.type = 'text/javascript'; lc.async = true;
+  lc.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.livechatinc.com/tracking.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(lc, s);
+})();
+</script>
+<script>
+	function active (){
+		var searchBar= document.getElementById("searchBar"); 
+		if (searchBar.value== "start search"){
+             searchBar.value=''
+             searchBar.placeholder="start search"
+       }
+	}
+</script>
+
+</head>
+<body>
+
+  <header class="container">
+  	<div class="logo">
+  		<a href="www.turkmen-manufacturers.com">
+  			
+  			<span class="logo_link"><span style="color: black; font-weight: bold; font-size: 24px;color:#6892D5;text-transform: uppercase;text-shadow: 2px 2px black;">Turkmen-manufacturers.com</span></span> <br>
+  			<span style="color:#2A363B;font-weight: lighter;font-size: 12px;text-shadow: none; position:absolute; left: 10%; top: 7%;"> Made in Turkmenistan </span>
+  			<div clas="clear" style="clear:both"></div>
+  			<img id="logo1" src="http://www.turkmenexporters.com/public/images/default/made-in-tkm-1.png" width=90 height=90 /> 
+  	    </a>
+  	</div>
+  	<div class="language">
+  		<a href="">
+  			<img src="https://cdn4.iconfinder.com/data/icons/world-flags/180/flag_UK_england_united_kingdom-32.png"> 
+  		</a>
+  	</div>
+  	<form action="index.php" method="post" id="searchForm" required>
+  		<input type="text" id="searchBar" name="query" placeholder="" value="start search" maxlength="20" autocomplete="on" onmousedown="active();">
+  		<input type="submit" id="searchBtn" value="Search" /> 
+  		  <i class="fa fa-search"></i> 
+    </form>
+  </header>
+
+  <article class="mainsection">
+  <div class="nav_bar">
+  	<p class="category">
+  		<i class="fa fa-list"> CATEGORY </i>
+  		<div id="localdate"></div> 
+  	</p> 
+
+  	<div class="main">
+  		<ul id="left-side">
+  			<li><a href="">Texttile industry</a>
+	  			<ul>
+	  				<li><div>Bathrobe</div></li>
+	  				<li><div>Bleached Cotton</div></li>
+	  				<li><div>Cosmetics Cotton pad</div></li> 
+	  				<li><div>Cotton Flannel Farbic</div></li>
+	  				<li><div>Cotton Yarn</div></li>
+	  				<li><div>Denim Farbic</div></li>
+	  				<li><div>Bedroom Linens</div></li>
+	  				<li><div>Cosmetic Cotton Buds</div></li>
+	  				<li><div>Cotton Cretonne farbic</div></li>
+	  			</ul>
+  			</li>
+  			<li><a href=""> Food industry</a>
+  				<ul>
+  					<li><div>Baby Puree</div></li>
+  					<li><div>Diray Product</div></li>
+  					<li><div>Fruit juice</div></li>
+  					<li><div>Ice tea</div></li>
+  					<li><div>Milk</div></li>
+  					<li><div>Non-alcloholic beverage</div></li>
+  					<li><div>Buckwheat</div></li>
+  					<li><div>Drinking water</div></li>
+  					<li><div>Fruit juice for children</div></li>
+  					<li><div>Ketchup</div></li>
+  					<li><div>Mung beans</div></li>
+  					<li><div>Premium quality fruit juice</div></li>
+                </ul>
+  			</li>
+
+  			<li><a href="">Chemical & Petrochemical industry</a>
+  			</li>
+  			<li><a href="">Building materials industry</a>
+  				<ul>
+  					<li><div>Aerated concrete blocks</div></li>
+  					<li><div>Steel channels</div></li>
+  					<li><div>Steel corner</div></li>
+  					<li><div>Steel reinforcement</div></li>
+
+  				</ul>
+  			</li>
+  			<li><a href="">Pharmaceutical industry </a>
+  				<ul>
+  					<li><div>Antibacterial wet wipes</div></li>
+  					<li><div>Dressing</div></li>
+  					<li><div>Medical elastic corset</div></li>
+  					<li><div>Medical various socks</div></li>
+  					<li><div>Syrup of Licorice Root</div></li>
+  					<li><div>Therapeutic mud</div></li>
+  					<li><div>Medical sterile bandage</div></li>
+  					<li><div>Medical herbal tea</div></li>
+  					<li><div>Therapeutic mineral water</div></li>
+  					<li><div>Therapeutic salt for spa</div></li>
+  				</ul>
+  			</li>
+  			<li><a href="">Household goods</a>
+  				<ul>
+  					<li><div>Kitchen furniture</div></li>
+  					<li><div>MDF doors</div></li>
+  					<li><div>Office furniture</div></li>
+  					<li><div>Living room and bedroom furniture</div></li>
+  					<li><div>Metal beds</div></li>
+  					<li><div>Wet wipes</div></li>		
+  				</ul>
+  			</li>
+  			<li><a href="">Transportation &Logistics Services </a>
+  				<ul>
+  					<li><div>Aviation transportation</div></li>
+  					<li><div>International transportation of dangerous goods</div></li>
+  					<li><div>Maritime freight transportation</div></li>
+  				</ul>
+  			</li>
+  			<li><a href="">Legal & Consulting service </a>
+  				<ul>
+  					<li><div>Arbitration services</div></li>
+  					<li><div>Development, examination and drafting of civil law contract</div></li>
+  					<li><div>Legal &consulting services</div></li>
+
+  				</ul>
+  			</li>
+  			<li><a href="">Toursim & Trvael service </a>
+  				<ul>
+  					<li><div>Booking of hotel, airplane and train ticket</div></li>
+  					<li><div>Business guide service in Turkmenistan</div></li>
+  					<li><div>Sightseeing tour in Turkmenistan</div></li>
+  				</ul>
+  			</li>
+
+
+  		</ul>
+    </div>
+    </div>
+    <div id="slider">
+    	<ul class="sliders">
+    		<li class="slide"><a href=""><img src="http://www.turkmenexporters.com/modules/image.php?src=public/images/sliders/sGEk5d.jpg&w=845&h=350" /></a></li>
+    		<li class="slide"><a href=""><img src="http://www.turkmenexporters.com/modules/image.php?src=public/images/sliders/aiSOD0.jpg&w=845&h=350" /></a></li>
+    		<li class="slide"><a href=""><img src="http://www.turkmenexporters.com/modules/image.php?src=public/images/sliders/XmMxrX.jpg&w=845&h=350"/></a></li> 
+    		<li class="slide"><a href=""><img src="http://www.turkmenexporters.com/modules/image.php?src=public/images/sliders/sGEk5d.jpg&w=845&h=350" /></a></li>
+    	  </ul>
+    </div>
+    <div id="brands">
+    	Brands of Turkmenistan 
+    </div>
+
+    <div id="product"> 
+	    <div class="product1">
+	    	<ul>
+	    		<li><a href=""><img class="productImage" src="https://images.unsplash.com/photo-1479064555552-3ef4979f8908?auto=format&fit=crop&w=750&q=80" width= 280 height=280></a>
+	    			<p>Product Name<br><p>Description<br><small style="color:grey">Price: 1 <i class="fa fa-usd"></i></small><br><small style="color:grey">Minimmum order quantity: 100</small></li>
+	    		<li><a href=""><img class="productImage" src="https://images.unsplash.com/photo-1479064555552-3ef4979f8908?auto=format&fit=crop&w=750&q=80" width= 280 height=280></a>
+	    		<p>Product Name<br><p>Description<br><small style="color:grey">Price: 1<i class="fa fa-usd"></i></small><br><small style="color:grey">Minimmum order quantity: 100</small></li>
+	    		<li><a href=""><img class="productImage" src="https://images.unsplash.com/photo-1479064555552-3ef4979f8908?auto=format&fit=crop&w=750&q=80" width= 280 height=280></a>
+	    		<p>Product Name<br><p>Description<br><small style="color:grey">Price: 1<i class="fa fa-usd"></i></small><br><small style="color:grey">Minimmum order quantity:100</small></li>
+	    		<li><a href=""><img class="productImage" src="https://images.unsplash.com/photo-1479064555552-3ef4979f8908?auto=format&fit=crop&w=750&q=80" width= 280 height=280></a>
+	    		<p>Product Name<br><p>Description<br><small style="color:grey">Price: 1<i class="fa fa-usd"></i></small><br><small style="color:grey">Minimmum order quantity:100</small></li>
+	    	</ul>
+	    </div >
+	    <hr>
+	    <div class="product2">
+	    	<ul>
+	    		<li><a href=""><img class="productImage" src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=500&q=80" width= 280 height=280></a>
+	    		<p>Product Name<br><p>Description<br><small style="color:grey">Price: 1<i class="fa fa-usd"></i></small><br><small style="color:grey">Minimmum order quantity:100</small></li>
+	    		<li><a href=""><img class="productImage" src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=500&q=80" width= 280 height=280></a>
+	    		<p>Product Name<br><p>Description<br><small style="color:grey">Price: 1<i class="fa fa-usd"></i></small><br><small style="color:grey">Minimmum order quantity:100</small></li>
+	    		<li><a href=""><img class="productImage" src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=500&q=80" width= 280 height=280></a>
+	    		<p>Product Name<br><p>Description<br><small style="color:grey">Price: 1<i class="fa fa-usd"></i></small><br><small style="color:grey">Minimmum order quantity:100</small></li>
+	    		<li><a href=""><img class="productImage" src="https://images.unsplash.com/photo-1491553895911-0055eca6402d?auto=format&fit=crop&w=500&q=80" width= 280 height=280></a>
+	    		<p>Product Name<br><p>Description<br><small style="color:grey">Price: 1<i class="fa fa-usd"></i></small><br><small style="color:grey">Minimmum order quantity:100</small></li>
+
+	    	</ul>
+	    </div>
+	 </div>
+	 <div id="strategy" >
+	 	<ul>
+	 		<li class="strategyIcon">
+	 			<i class="fa fa-compass" style="background-color:#FF6A00; font-size: 60px; display: flex;"> 
+	 			</i> 
+	 				<p style="color:black; padding: 4px; ">
+	 					<small>Get started</small>
+	 				</p> 
+	 	    </li>
+	 	    <!--<li class="arrowIcon">
+	 	    	<i class="fa fa-chevron-right"></i>
+	 	    </li>-->
+	 	
+	 	    <li class="strategyIcon">
+	 			<i class="fa fa-shopping-bag" style="background-color:#2980B9; font-size: 60px; display: flex; " >  
+	 			</i>
+	 				<p style="color:black;  padding: 4px;">
+	 					<small>Dsicover Product</small>
+	 				</p> 
+	 	    </li>
+	 	    <!--<li class="arrowIcon">
+	 	    	<i class="fa fa-chevron-right">
+	 	    	</i>
+	 	   	 </li>--> 
+	 	
+	 	    <li class="strategyIcon">
+	 			<i class="fa fa-link" style="background-color:#D9624E; font-size: 48px;" >  
+	 			</i>
+	 				<p style="color:black;  padding: 2px;"><small>Contact supplier</small></p> 
+	 	    </li>
+	 	    <!--<li class="arrowIcon">
+	 	    	<i class="fa fa-chevron-right">
+	 	    	</i>
+	 	    </li>-->
+	 	    <li class="strategyIcon">
+	 			<i class="fa fa-shopping-cart" style="background-color:#2EB872; font-size: 48px; " >  
+	 			</i>
+	 				<p style="color:black; padding: 4px;"><small>Confirm Payment</small></p> 
+	 	    </li>
+	 	    <!--<li class="arrowIcon">
+	 	    	<i class="fa fa-chevron-right">
+	 	    	</i>
+	 	    </li>-->	
+	        <li class="strategyIcon">
+	 			<i class="fa fa-truck" style="background-color:#70A1D7; font-size: 52px;" >  
+	 		    </i>
+	 				<p style="color:black;  padding: 4px;"><small>Logistics</small></p> 
+	 	    </li>
+	 	    <!--<li class="arrowIcon">
+	 	    	<i class="fa fa-chevron-right">
+	 	    	</i>
+	 	    </li>--> 
+	 	    <li class="strategyIcon">
+	 			<i class="fa fa-comments" style="background-color:orange; font-size:52px;" > 
+	 			</i>
+	 				<p style="color:black;  padding: 4px;"><small>Feedback</small></p> 
+	 	    </li>
+	 	</ul>  	
+	 </div>
+	 <div id="bottombar"> 
+	 	<ul id="navlist">
+	 		<li><a href="http://www.turkmen-manufacturers.com/"><span style="color:#222831;">Turkmen-manufacturers</span></a></li>
+	 		<li><a href=""><span style="color:#222831;">ABOUT US</span></a></li>
+	 		<li><a href=""><span id="contact" style="color:#222831;">CONTACT US</span></a></li> 
+	 	</ul>
+
+	 </div>
+
+  </article> 
+  <footer>
+  	<small>All Rights Reserved © 2017. </small> 
+  </footer> 
+
+</body>
+<script>
+	$(function() {
+		$("#left-side").menu(); 
+		$(".center-slider .sliderWrapper").animate({"margin-left":'-=720px'}, 1000)
+		
+});
+
+	$(function (){
+		var $slider=$('#slider');
+		var $sliderContainer=$slider.find('.sliders');
+		var $slides=$sliderContainer.find('.slide');
+		var width=1000;
+		var animationSpeed=2000; 
+		var pause=3000; 
+		var currentSlide=1; 
+		var interval; 
+
+		function startSlider(){
+			interval=setInterval(function (){
+				$sliderContainer.animate({'margin-left':'-='+width}, animationSpeed,function (){
+					currentSlide++;
+					if (currentSlide===$slides.length){
+						currentSlide=1;
+						sliderContainer.css('margin-left',0);
+					}
+				});
+			},pause);
+		}
+		function stopSlider(){
+			clearInterval (interval);
+		}
+
+		$slider.on('mouseenter',stopSlider).on('mouseleave', startSlider);
+		startSlider(); 
+
+
+	}); 
+</script>
+</html>
